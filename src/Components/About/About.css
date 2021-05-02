@@ -1,0 +1,107 @@
+.default-orange-btn {
+    color: #fff;
+    font-weight: 500;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+    padding: 18px 36px;
+    display: inline-block;
+    text-transform: capitalize;
+    background: #ff5000;
+    -webkit-transition: all 0.25s linear;
+    transition: all 0.25s linear;
+    text-decoration: none;
+  }
+  
+  .default-orange-btn:hover {
+    color: #fff;
+    background: #e64800;
+    -webkit-animation: pulseOrange 1s 1 linear;
+            animation: pulseOrange 1s 1 linear;
+  }
+
+.about-inner h4 {
+    margin-bottom: 15px;
+  }
+  
+  .about-inner h4 span {
+    color: #ff5000;
+  }
+  
+  .about-inner p {
+    margin-bottom: 30px;
+  }
+  
+  .about-inner .about-list {
+    margin-bottom: 30px;
+
+  }
+  
+  .about-inner .about-list li {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .about-inner .about-list li:last-child {
+    margin-bottom: 0;
+  }
+  
+  .about-inner .about-list li .list-item-title {
+    color: #000;
+    font-weight: 700;
+  }
+  
+  .about-inner .about-list li .list-item-title:after {
+    content: ":";
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+  .about-img-wrap {
+    z-index: 82;
+    position: relative;
+  }
+  
+  .about-img-wrap:before {
+    content: "";
+    top: 50%;
+    left: -30px;
+    width: 80%;
+    height: 80%;
+    z-index: -77;
+    position: absolute;
+    background: #ff5000;
+    border-radius: 10px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    -webkit-box-shadow: 0 6px 12px 0 rgba(255, 80, 0, 0.4);
+            box-shadow: 0 6px 12px 0 rgba(255, 80, 0, 0.4);
+  }
+  
+  .about-img-wrap img {
+    border-radius: 10px;
+    -webkit-box-shadow: 0 23px 49px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 0 23px 49px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  /* ---------------------------------------------------------------- */
+  /* Responsive Media Query
+   * Medium devices (tablets, less than 992px)
+  /* ---------------------------------------------------------------- */
+  @media only screen and (max-width: 991.98px) {
+    .about-img-wrap img {
+      display: none;
+    }
+  }
+  
+  /* ---------------------------------------------------------------- */
+  /* Responsive Media Query
+  /* Small devices (landscape phones, less than 768px)
+  /* ---------------------------------------------------------------- */
+  @media only screen and (max-width: 767.98px) {
+    .about-inner h4 {
+      font-size: 2.2rem;
+    }
+  }
+  
